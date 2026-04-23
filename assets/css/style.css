@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  
+ 
+}
+ a {
+    text-decoration: none;
+  }
+body {
+  background-color: black;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;     
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  display: block;
+}
+
+/*NAV_BAR*/
+
+#nav-bar {
+  width: 100%;
+  background-color: black;
+  opacity: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 0.5px solid #fdfd96;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  overflow: hidden;  
+}
+#nav-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,
+        0,
+        0,
+        0.6);
+    /* Cor preta com 60% de opacidade (escurece) */
+    backdrop-filter: blur(8px);
+    /* Aplica o blur */
+    -webkit-backdrop-filter: blur(8px);
+    /* Suporte para Safari */
+    z-index: 1;
+  }
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  min-width: 80%;
+  text-align: center;
+  align-self: center;
+  color: white;
+
+  img {
+    height: 90px;
+    z-index: 4;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 15%;
+    width: 30%;
+    font-size: 20px;
+
+    a {
+      color: white;
+    }
+
+    z-index: 4;
+  }
+}
+
+/*HEADER*/
+
+
+header {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  background-image: url("/assets/images/back_image.jpg");
+  color: white;
+  margin-top: 90px;
+  display: grid;
+  place-items: center;
+
+
+  h1 {
+    color: #e3bc51;
+    font-size: 80px;
+    position: relative;
+    z-index: 2;
+    gap: 4%;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 100;
+    position: relative;
+    z-index: 2;
+    gap: 4%;
+  }
+
+}
+
+#header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+#header-itens {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-rows: 30% 30% 40%;
+  place-items: center;
+}
+
+#contact {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background-color: #e3bc51;
+  width: 170px;
+  height: 60px;
+  border-radius: 5px;
+
+  a {
+    color: black;
+    font-size: 16px;
+  }
+}
+
+/*ARTISTS-SECTION*/
+
+#artists {
+  min-width: 100%;
+  min-height: 130vh;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  place-items: center;
+}
+
+#artists-text {
+  height: 250px;
+  display: grid;
+  grid-template-rows: 30% 30%;
+  place-items: center;
+
+  h1 {
+    color: #e3bc51;
+    font-size: 60px;
+  }
+
+}
+
+#tatuadores {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  text-align: justify;
+  gap: 5%;
+
+  img {
+    height: 700px;
+  }
+
+  div {
+    width: 93%;
+  }
+
+  h2 {
+    color: #e3bc51;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 3%;
+    padding-left: 0;
+  }
+
+  p {
+    font-size: 18px;
+    padding: 1%;
+  }
+}
+
+.especialidade {
+  color: #a1a1a1;
+  font-size: 16px;
+}
+
+/*REASONS-SECTION*/
+
+#reasons-aurum {
+  height: 50vh;
+  color: white;
+  background-color: #0A0906;
+  text-align: center;
+  display: grid;
+  place-items: center;
+
+  h1{
+    color: #e3bc51;
+    font-size: 46px;
+  }
+
+}
+#reasons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 30vh;
+  gap: 3%;
+  padding: 2%;
+}
+
+#footer{
+  margin-top: 1px solid red;
+}
