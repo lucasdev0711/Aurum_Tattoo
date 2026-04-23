@@ -3,14 +3,18 @@
   border: 0;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;  
+  letter-spacing: 3px; 
+  font-size: 14px;
+  color:white;
+  /*border: 1px solid red;*/
 
-  
- 
 }
- a {
-    text-decoration: none;
-  }
+
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: black;
   width: 100%;
@@ -18,7 +22,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  width: 100%;     
+  width: 100%;
   min-height: 100%;
 }
 
@@ -32,34 +36,35 @@ html {
 #nav-bar {
   width: 100%;
   background-color: black;
-  opacity: 95%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 0.5px solid #fdfd96;
   position: fixed;
   top: 0;
   z-index: 9999;
-  overflow: hidden;  
+  overflow: hidden;
+  text-transform: uppercase;
 }
+
 #nav-bar::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,
-        0,
-        0,
-        0.6);
-    /* Cor preta com 60% de opacidade (escurece) */
-    backdrop-filter: blur(8px);
-    /* Aplica o blur */
-    -webkit-backdrop-filter: blur(8px);
-    /* Suporte para Safari */
-    z-index: 1;
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,
+      0,
+      0,
+      0.6);
+  /* Cor preta com 60% de opacidade (escurece) */
+  backdrop-filter: blur(8px);
+  /* Aplica o blur */
+  -webkit-backdrop-filter: blur(8px);
+  /* Suporte para Safari */
+  z-index: 1;
+}
+
 #nav {
   display: flex;
   justify-content: space-between;
@@ -83,12 +88,19 @@ html {
     font-size: 20px;
 
     a {
-      color: white;
+      color: #A88B4B;
     }
 
     z-index: 4;
   }
 }
+
+#nav-bar a:hover {
+    color: #d3d3d3;
+}
+
+
+
 
 /*HEADER*/
 
@@ -100,22 +112,30 @@ header {
   background-position: center center;
   text-align: center;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   background-image: url("/assets/images/back_image.jpg");
   color: white;
   margin-top: 90px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
   h1 {
-    color: #e3bc51;
+    color: #c5a059;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 8px;
     font-size: 80px;
+    font-weight: 700;
     position: relative;
     z-index: 2;
     gap: 4%;
   }
-
+  h2{
+    font-size: 30px;
+    font-weight: lighter;
+  }
   h3 {
     font-size: 30px;
     font-weight: 100;
@@ -131,7 +151,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 95vh;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -148,31 +168,35 @@ header {
   place-items: center;
 }
 
-#contact {
+#btn-studio {
   position: relative;
   z-index: 2;
   color: white;
   background-color: #e3bc51;
-  width: 170px;
+  width: 18%;
   height: 60px;
   border-radius: 5px;
+  background-color: black;
+  border: 1px solid #A88B4B;
 
   a {
-    color: black;
-    font-size: 16px;
+    color: #A88B4B;
+    font-size: 14px;
+    text-transform: uppercase;
+    
   }
 }
 
+
 /*ARTISTS-SECTION*/
 
-#artists {
+#artists-section {
   min-width: 100%;
   min-height: 130vh;
   color: white;
   text-align: center;
-  display: grid;
-  grid-template-rows: 30% 70%;
-  place-items: center;
+  background-color: #121212;
+  
 }
 
 #artists-text {
@@ -180,74 +204,184 @@ header {
   display: grid;
   grid-template-rows: 30% 30%;
   place-items: center;
+  padding-top: 4%;
 
   h1 {
     color: #e3bc51;
-    font-size: 60px;
+    font-size: 20px;
+    font-weight: 100;
   }
 
 }
+#title-artists{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  gap: 1%;
+}
+
 
 #tatuadores {
+  height: 80vh;
   display: grid;
-  grid-template-columns: 40% 40%;
-  justify-content: center;
+  grid-template-columns: 30% 30%;
+  justify-content: center; 
   text-align: justify;
   gap: 5%;
 
-  img {
-    height: 700px;
-  }
-
-  div {
-    width: 93%;
-  }
-
   h2 {
-    color: #e3bc51;
-    font-size: 24px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: lighter;
     padding: 3%;
     padding-left: 0;
+    padding-top: 1% ;
   }
 
   p {
     font-size: 18px;
-    padding: 1%;
   }
 }
 
-.especialidade {
-  color: #a1a1a1;
-  font-size: 16px;
+.artists{
+  display: grid;
 }
 
-/*REASONS-SECTION*/
-
-#reasons-aurum {
+.box-img{
+  overflow: hidden;
   height: 50vh;
-  color: white;
-  background-color: #0A0906;
+  width: 90%;
+}
+
+.moldura-container {
+  position: relative;
+  
+}
+
+/* Estilo base para todas as bordas */
+.borda {
+  position: absolute;
+  width: 90%;
+  height: 50vh;
+  border: 1px solid #A88B4B;
+  pointer-events: none; /* Garante que a borda não atrapalhe cliques */
+}
+
+/* Primeira borda (mais ao fundo e deslocada para baixo/direita) */
+.borda-1 {
+  top: 15px;
+  left: 15px;
+  opacity: 0.6; /* Um pouco mais clara como na imagem */
+}
+
+/* Segunda borda (intermediária) */
+.borda-2 {
+  top: 7px;
+  left: 7px;
+  opacity: 0.8;
+}
+
+.img-tatuadores {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #121212;
+  border: 1px solid #A88B4B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: filter 0.4s ease, transform 0.4s ease;
+  
+}
+.img-tatuadores:hover {
+  transform: scale(1.1);
+  border: 1px solid #A88B4B;
+}
+.skills{
+  display: flex;
+   gap: 2%;
+   font-size: 10px;
+}
+.especialidade {
+  display: flex;
+  justify-content: center;
+  color: #A88B4B;
+  width: 130px;
+  height: 30px;
   text-align: center;
+  align-items: center;
+  border: 0.2px solid #A88B4B
+ 
+}
+
+/*GALLERY-SECTION*/
+
+#gallery-section{
+  height: 100vh;
+  background-color: #0a0a0a;
+}
+
+
+/*STUDIO-SECTION*/
+
+#studio-section{
+  height: 100vh;
+  background-color: #121212;
+}
+
+/*CONTACT-SECTION*/
+
+
+#contact-section{
+  height: 100vh;
+  background-color: #0a0a0a;
+}
+
+
+
+/*FOOTER*/
+
+#footer {
+  border-top: 0.1px solid #fdfd96;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  height: 10vh;
+
+  img {
+    height: 80px;
+  }
+}
+
+#text-footer {
+  text-align: center;
+
+}
+
+#social-icons {
+  display: flex;
+  align-self: center;
+  column-gap: 4%;
+
+}
+
+#social-icons svg {
+  width: 40px;
+
+
+}
+
+.icons-sm {
   display: grid;
   place-items: center;
-
-  h1{
-    color: #e3bc51;
-    font-size: 46px;
-  }
-
-}
-#reasons{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  height: 30vh;
-  gap: 3%;
-  padding: 2%;
-}
-
-#footer{
-  margin-top: 1px solid red;
+  height: 45px;
+  width: 45px;
+  background-color: #0A0906;
+  border-radius: 10px;
 }
