@@ -1,50 +1,20 @@
-﻿# 🖋️ Aurum Tattoo - Premium Portfolio Website
+# 🖋️ Aurum Tattoo - Premium Portfolio Website
 
-![Preview do Projeto](assets/images/sua-imagem-de-preview-aqui.jpg)
+![Preview do Projeto](assets/images/image.png)
 
 ## 📖 Sobre o Projeto
-O **Aurum Tattoo** é um projeto de desenvolvimento web (Landing Page / One Page) criado para elevar o posicionamento digital de estúdios de tatuagem de alto padrão. 
+O **Aurum Tattoo** é um protótipo de Landing Page (One Page) focado em elevar o posicionamento digital de estúdios de tatuagem de alto padrão. 
 
-Muitos tatuadores dependem exclusivamente do Instagram, sofrendo com a compressão de imagens e a distração do algoritmo. Este projeto resolve esse problema entregando uma vitrine digital premium, onde a arte é o foco principal, e oferecendo um funil de agendamento que filtra clientes curiosos, garantindo orçamentos mais qualificados para os artistas.
+No mercado atual de tatuagem, a grande maioria dos artistas depende exclusivamente do Instagram como portfólio. Embora seja uma ótima ferramenta, as redes sociais sofrem com a compressão de imagens, mudanças de algoritmo e distrações constantes para o usuário.
 
-Este projeto foi desenvolvido como um **modelo base para prospecção freelance**, visando pequenos estúdios (com cerca de dois artistas) que desejam profissionalizar sua presença online.
+Este projeto nasce como uma solução comercial (desenvolvido para ser vendido de forma freelance) que resolve esse problema entregando:
 
----
+1. **Autoridade e Exclusividade:** Um ambiente digital próprio, com design premium (explorando a estética "boutique de luxo" em tons escuros e detalhes dourados), que passa credibilidade e valoriza o trabalho do artista.
+2. **Valorização da Arte:** Exibição das tatuagens em alta qualidade, sem os limites de formato das redes sociais.
+3. **Filtro de Clientes:** Um espaço dedicado para um formulário de agendamento que direciona clientes reais e orçamentos qualificados para o WhatsApp do estúdio, otimizando o tempo dos profissionais.
 
-## ✨ Funcionalidades (Features)
-* **Design Premium & Dark Mode:** Foco em cores escuras e douradas para transmitir luxo, exclusividade e dar o máximo de contraste às fotografias das tatuagens.
-* **Galeria Imersiva:** Exibição de trabalhos sem perda de qualidade, utilizando a propriedade `object-fit: cover` para manter o alinhamento perfeito.
-* **Animações CSS Modernas:** * Efeito de Zoom interno (`transform: scale`) nos cards de artistas contido por `overflow: hidden`.
-  * Botões de ação (CTAs) com efeito de preenchimento deslizante da esquerda para a direita utilizando pseudo-elementos (`::before`).
-* **Seção de Artistas:** Perfil individual destacando a especialidade de cada tatuador (ex: Realismo, Fine Line, Blackwork).
-* **Font Pairing Elegante:** Combinação estratégica de tipografias Serifadas (para títulos) e Sans-Serif (para textos longos).
+O projeto foi criado inicialmente com o escopo ideal para atender um estúdio pequeno (com cerca de dois artistas), funcionando como um caso de estudo prático de desenvolvimento web e, simultaneamente, como uma ferramenta real de prospecção de negócios.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
-* **HTML5:** Estruturação semântica.
-* **CSS3:** Estilização, Flexbox, CSS Grid, variáveis e animações de interface (Hover states, Transitions).
-* **JavaScript (Vanilla):** Interatividades da página.
-
----
-
-## 🎨 UI/UX & Design Choices
-
-A interface foi pensada para se assemelhar a uma "boutique de luxo", utilizando as seguintes escolhas visuais:
-
-### Paleta de Cores
-* **Fundo (Background):** `#121212` / `#161616` (Preto/Grafite suave para não cansar a vista).
-* **Destaques (Accents):** `#A88B4B` / `#E3BC51` (Tons de dourado para passar a sensação de exclusividade).
-* **Textos:** `#F5F5F5` (Off-white para títulos) e `#A3A3A3` (Cinza claro para parágrafos).
-
-### Tipografia (Google Fonts)
-* **Títulos e Logos:** *Cinzel* e *Playfair Display* (Serifadas, trazendo um ar clássico e sofisticado).
-* **Corpo do Texto e Tags:** *Inter* e *Montserrat* (Fontes limpas e geométricas). O uso de letras maiúsculas com alto `letter-spacing` (ex: 3px ou 4px) foi aplicado em menus e botões para maximizar a elegância.
-
----
-
-## 🚀 Como rodar o projeto localmente
-
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/SEU-USUARIO/aurum-tattoo.git](https://github.com/SEU-USUARIO/aurum-tattoo.git)
+Feito com dedicação por [Seu Nome/Seu Link do LinkedIn] 🚀
