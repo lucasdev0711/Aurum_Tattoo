@@ -3,10 +3,10 @@
   border: 0;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;  
-  letter-spacing: 3px; 
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 3px;
   font-size: 14px;
-  color:white;
+  color: white;
   /*border: 1px solid red;*/
 
 }
@@ -29,6 +29,12 @@ html {
 .container {
   width: 100%;
   display: block;
+}
+.gold{
+  color: #A88B4B;
+}
+.gray{
+  color: gray;
 }
 
 /*NAV_BAR*/
@@ -96,7 +102,7 @@ html {
 }
 
 #nav-bar a:hover {
-    color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 
@@ -120,11 +126,12 @@ header {
   justify-content: center;
   align-items: center;
 
+  }
 
-  h1 {
+#title-home {
     color: #c5a059;
     text-transform: uppercase;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Cinzel', serif;
     letter-spacing: 8px;
     font-size: 80px;
     font-weight: 700;
@@ -132,18 +139,33 @@ header {
     z-index: 2;
     gap: 4%;
   }
-  h2{
-    font-size: 30px;
-    font-weight: lighter;
-  }
-  h3 {
-    font-size: 30px;
-    font-weight: 100;
-    position: relative;
-    z-index: 2;
-    gap: 4%;
-  }
+#tattoo-subtitle {
+  font-size: 30px;
+  font-weight: lighter;
+  position: relative;
+  padding-bottom: 20px;
+  color: #c5a059;
+}
 
+#tattoo-subtitle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  /* Cola a linha no final do padding-bottom */
+  width: 150px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #c5a059, transparent);
+}
+
+#text-title {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  font-weight: lighter;
+  position: relative;
+  z-index: 2;
+  gap: 4%;
 }
 
 #header-overlay {
@@ -183,7 +205,7 @@ header {
     color: #A88B4B;
     font-size: 14px;
     text-transform: uppercase;
-    
+
   }
 }
 
@@ -196,7 +218,15 @@ header {
   color: white;
   text-align: center;
   background-color: #121212;
-  
+
+}
+#our-job{
+  color: #A88B4B;
+  font-weight: 150;
+  font-size: 20px;
+}
+#gallery-title{
+  color: #A88B4B; font-size: 40px; font-family: 'Cinzel', serif;
 }
 
 #artists-text {
@@ -205,6 +235,7 @@ header {
   grid-template-rows: 30% 30%;
   place-items: center;
   padding-top: 4%;
+  font-family: "Cinzel", sans-serif;
 
   h1 {
     color: #e3bc51;
@@ -213,12 +244,17 @@ header {
   }
 
 }
-#title-artists{
+#artists-title-text{
+  color: #A88B4B; font-size: 50px; font-family: 'Cinzel', serif;
+}
+
+#title-artists {
   width: 100%;
   display: flex;
   justify-content: center;
   font-size: 50px;
   gap: 1%;
+  font-weight: lighter;
 }
 
 
@@ -226,18 +262,18 @@ header {
   height: 80vh;
   display: grid;
   grid-template-columns: 30% 30%;
-  justify-content: center; 
-  text-align: justify;
+  justify-content: center;
+  text-align: center;
   gap: 5%;
 
   h2 {
     color: white;
-    font-size: 40px;
-    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
     font-weight: lighter;
     padding: 3%;
     padding-left: 0;
-    padding-top: 1% ;
+    padding-top: 1%;
   }
 
   p {
@@ -245,41 +281,53 @@ header {
   }
 }
 
-.artists{
-  display: grid;
+.artists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 3%;
 }
 
-.box-img{
+.box-img {
   overflow: hidden;
   height: 50vh;
-  width: 90%;
+  width: 80%;
+  position: relative;
+  z-index: 3;
 }
 
 .moldura-container {
   position: relative;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+
 }
 
-/* Estilo base para todas as bordas */
 .borda {
   position: absolute;
-  width: 90%;
+  width: 75%;
   height: 50vh;
   border: 1px solid #A88B4B;
-  pointer-events: none; /* Garante que a borda não atrapalhe cliques */
+  pointer-events: none;
 }
 
-/* Primeira borda (mais ao fundo e deslocada para baixo/direita) */
 .borda-1 {
-  top: 15px;
-  left: 15px;
-  opacity: 0.6; /* Um pouco mais clara como na imagem */
+  top: 20px;
+  left: 51.5%;
+  transform: translateX(-50%) translate(8px, 8px);
+  opacity: 0.6;
+
 }
 
-/* Segunda borda (intermediária) */
+
 .borda-2 {
-  top: 7px;
-  left: 7px;
+  top: 17px;
+  left: 51%;
+  transform: translateX(-50%) translate(4px, 4px);
   opacity: 0.8;
 }
 
@@ -288,24 +336,26 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background-color: #121212;
   border: 1px solid #A88B4B;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
   z-index: 3;
   transition: filter 0.4s ease, transform 0.4s ease;
-  
+
+
 }
+
 .img-tatuadores:hover {
   transform: scale(1.1);
   border: 1px solid #A88B4B;
 }
-.skills{
+
+.skills {
   display: flex;
-   gap: 2%;
-   font-size: 10px;
+  gap: 4%;
+  font-size: 10px;
+  justify-content: center;
 }
+
 .especialidade {
   display: flex;
   justify-content: center;
@@ -315,28 +365,116 @@ header {
   text-align: center;
   align-items: center;
   border: 0.2px solid #A88B4B
- 
 }
 
 /*GALLERY-SECTION*/
 
-#gallery-section{
-  height: 100vh;
+#gallery-section {
+  height: 170vh;
   background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#title-gallery{
+  text-align: center;
+  
+}
+#title-gallery h1{
+  font-size: 40px;
+  font-weight: lighter;
+}
+#gallery-grid{
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1%;
+  padding: 3%;
+}
+
+.gallery-item{
+  width: 100%;
+  border: 1px solid #A88B4B;
+  position: relative;  
+  overflow: hidden;
+  img{
+    filter: brightness(0.7);
+    transition: filter 0.4s ease, transform 0.4s ease;
+  }
+}
+.gallery-item:hover img{
+  filter: brightness(0.4); 
+  transform: scale(1.1);
+}
+.gallery-item:hover .overlay{
+  opacity: 1;
+  transform: translateY(0);
+  
+}
+.overlay{
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  transform: translateY(20px);
+  transition: opacity 0.4s, transform 0.4s ease;
 }
 
 
+.gallery-item img {
+  width: 100%;
+  height:45vh;
+  object-fit: cover;
+  display: block;
+}
+.overlay-title{
+  color: #A88B4B;
+}
+
 /*STUDIO-SECTION*/
 
-#studio-section{
-  height: 100vh;
+#studio-section {
+  height: 70vh;
   background-color: #121212;
+  display: flex;
+  justify-content: center;
+  
+}
+#studio{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column{
+  flex: 1;
+}
+#text-studio{
+  
+}
+#reasons-studio{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5%;
+}
+.reason{
+  border-left: 1px solid #A88B4B;
+  width: 50%;
+  padding: 2%;
 }
 
 /*CONTACT-SECTION*/
 
 
-#contact-section{
+#contact-section {
   height: 100vh;
   background-color: #0a0a0a;
 }

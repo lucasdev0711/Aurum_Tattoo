@@ -12,6 +12,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -31,9 +36,9 @@
     <header id="header">
       <div id="header-overlay"></div>
       <div id="header-itens">
-        <h1>Aurum</h1>
-        <h2>- TATTOO -</h2>
-        <h3>Arte rara para peles únicas.</h3>
+        <h1 id="title-home">Aurum</h1>
+        <h2 id="tattoo-subtitle">- TATTOO -</h2>
+        <em id="text-title">Arte rara para peles únicas.</em>
         <button id="btn-studio">
           <a href="#gallery-section">Conheça nosso trabalho</a>
         </button>
@@ -43,11 +48,13 @@
     <section id="artists-section">
       <div id="artists-text">
         <h1>Nossos artistas</h1>
-        <div id="title-artists">Criadores de <em style="color: #A88B4B; font-size: 50px;">Arte Viva</em></div>
+        <div id="title-artists">Criadores de <em
+            id="artists-title-text">Arte Viva</em></div>
       </div>
 
 
       <div id="tatuadores">
+
         <div class="artists">
           <div class="moldura-container">
             <div class="borda borda-1"></div>
@@ -58,8 +65,8 @@
           </div>
 
           <h2>Marcos Antônio</h2>
-          <h4 style="color: #A88B4B; ">Artista senior</h4>
-          <p style="color: gray;">Especialista em traços delicados e designs ornamentais. Transforma ideias em arte
+          <h4 class="gold">Artista senior</h4>
+          <p class="gray">Especialista em traços delicados e designs ornamentais. Transforma ideias em arte
             permanente com precisão e
             elegância.</p>
           <div class="skills">
@@ -79,8 +86,8 @@
           </div>
 
           <h2>Leandro Duarte</h2>
-          <h4 style="color: #A88B4B;">Artista senior</h4>
-          <p style="color: gray;">Com mais de 10 anos de experiência, especializado em realismo e trabalhos detalhados
+          <h4 class="gold">Artista senior</h4>
+          <p class="gray">Com mais de 10 anos de experiência, especializado em realismo e trabalhos detalhados
             em preto e cinza. Cada
             tatuagem é uma obra de arte única.</p>
           <div class="skills">
@@ -97,44 +104,136 @@
 
     <section id="gallery-section">
 
+      <div id="title-gallery">
+        <h3 id="our-job">
+          Nossas tattoos
+        </h3>
+        <h1><em id="gallery-title">Galeria</em> de Arte</h1>
+      </div>
+
+      <div id="gallery-grid">
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooL3.png" alt="Tatuagem 1">
+          <div class="overlay">
+            <p class="overlay-title">Lírios no braço</p>
+            <p class="overlay-style">Blackwork · Leandro Duarte</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooM1.png" alt="Tatuagem 2">
+          <div class="overlay">
+            <p class="overlay-title">Tigre no peito</p>
+            <p class="overlay-style">Blackwork · Marcos Antônio</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooL2.png " alt="Tatuagem 3">
+          <div class="overlay">
+            <p class="overlay-title">Águia no antebraço</p>
+            <p class="overlay-style">Blackwork · Leandro Duarte</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooM2.png" alt="Tatuagem 4">
+          <div class="overlay">
+            <p class="overlay-title">Medusa na panturrilha</p>
+            <p class="overlay-style">Blackwork · Marcos Antônio</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooL4.png" alt="Tatuagem 5">
+          <div class="overlay">
+            <p class="overlay-title">Flores nas costas</p>
+            <p class="overlay-style">Blackwork · Leandro Duarte</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooM3.png" alt="Tatuagem 6">
+          <div class="overlay">
+            <p class="overlay-title">Arte de Cristo no antebraço</p>
+            <p class="overlay-style">Blackwork · Marcos Antônio</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooL6.png" alt="Tatuagem 4">
+          <div class="overlay">
+            <p class="overlay-title">Flores no antebraço</p>
+            <p class="overlay-style">Blackwork · Leandro Duarte</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooM4.png" alt="Tatuagem 5">
+          <div class="overlay">
+            <p class="overlay-title">Lobo no Braço</p>
+            <p class="overlay-style">Blackwork · Marcos Antônio</p>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/tattoos/tattooL5.png" alt="Tatuagem 6">
+          <div class="overlay">
+            <p class="overlay-title">Arte ornamenatal na panturrilha</p>
+            <p class="overlay-style">Blackwork · Leandro Duarte</p>
+          </div>
+        </div>
+
+      </div>
+
     </section>
 
     <section id="studio-section">
-      <div id="text-studio">
-        <p>sobre o estúdio</p>
-        <h1>Filosofia <em>Aurum</em></h1>
+      <div id="studio">
+        <div class="column">
+        <p class="gold">sobre o estúdio</p>
+        <h1>Filosofia <em class="gold">Aurum</em></h1>
 
-        <p>"Acreditamos que uma tatuagem não é apenas uma imagem. É uma intenção, uma história, uma extensão de quem
+        <p class="gold">"Acreditamos que uma tatuagem não é apenas uma imagem. É uma intenção, uma história,
+          uma extensão de quem
           você é."</p>
-        <p>O Estúdio AURUM nasceu da convicção de que a tatuagem é uma das formas mais íntimas de arte. Fundado por
-          artistas que recusaram a mediocridade e escolheram a excelência, o estúdio é um santuário onde cada detalhe —
-          do ambiente à agulha — foi pensado para criar uma experiência transformadora.</p>
-        <p>Trabalhamos com agendamento exclusivo, dedicando tempo integral a cada cliente. Não produzimos em massa.
-          Produzimos em significado.</p>
-        <div>
-          <div>
+        <div id="text-studio">
+          <p>O Estúdio AURUM nasceu da convicção de que a tatuagem é uma das formas mais íntimas de arte. Fundado por
+            artistas que recusaram a mediocridade e escolheram a excelência, o estúdio é um santuário onde cada detalhe
+            — do ambiente à agulha — foi pensado para criar uma experiência transformadora.</p>
+          <p>Trabalhamos com agendamento exclusivo, dedicando tempo integral a cada cliente. Não produzimos em massa.
+            Produzimos em significado.</p>
+        </div>
+
+        <div id="reasons-studio">
+          <div class="reason">
             <h4>Exclusividade</h4>
             <p>Cada design é único, criado especialmente para você.</p>
           </div>
-          <div>
+          <div class="reason">
             <h4>Arte</h4>
             <p>Cada traço é pensado como parte de uma obra maior.</p>
           </div>
-          <div>
+          <div class="reason">
             <h4>Higiene</h4>
             <p>Protocolos rigorosos de esterilização e segurança.</p>
           </div>
-          <div>
+          <div class="reason">
             <h4>Cuidadeo</h4>
             <p>Acompanhamento completo do processo e cicatrização.</p>
           </div>
         </div>
       </div>
-      <div id="loc-studio">
-        <div class="imgs-studio"><img src="" alt=""><img src="" alt=""></div>
-        <div class="imgs-studio"><img src="" alt=""><img src="" alt=""></div>
+      <div class="column">
+        <div id="double-img">
+          <div class="imgs-studio"><img src="" alt=""><img src="" alt="imagens do studio"></div>
+          <div class="imgs-studio"><img src="" alt=""><img src="" alt="imagens do studio"></div>
+        </div>
+        <div id="img"><img src="" alt="imagens do studio"></div>
       </div>
       <div id="address-studio"></div>
+      </div>
+      
     </section>
 
 
