@@ -234,7 +234,7 @@ header {
   display: grid;
   grid-template-rows: 30% 30%;
   place-items: center;
-  padding-top: 4%;
+  padding-top: 5%;
   font-family: "Cinzel", sans-serif;
 
   h1 {
@@ -245,7 +245,9 @@ header {
 
 }
 #artists-title-text{
-  color: #A88B4B; font-size: 50px; font-family: 'Cinzel', serif;
+  color: #A88B4B; 
+  font-size: 50px; 
+  font-family: 'Cinzel', serif;
 }
 
 #title-artists {
@@ -287,6 +289,7 @@ header {
   align-items: center;
   text-align: center;
   gap: 3%;
+  
 }
 
 .box-img {
@@ -379,7 +382,7 @@ header {
 }
 #title-gallery{
   text-align: center;
-  
+  padding-top: 5%;
 }
 #title-gallery h1{
   font-size: 40px;
@@ -439,7 +442,7 @@ header {
 /*STUDIO-SECTION*/
 
 #studio-section {
-  height: 70vh;
+  height: 100vh;
   background-color: #121212;
   display: flex;
   justify-content: center;
@@ -450,13 +453,32 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
+
 
 .column{
   flex: 1;
 }
+
+#info-studio{
+  height: 60vh;
+  width: 82%;
+}
+#title-studio{
+  font-size: 40px;
+  font-family: 'Cinzel', serif;
+    font-weight: lighter;
+
+  em{
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+    font-weight: lighter;
+  }
+}
 #text-studio{
-  
+text-align: justify;
+padding: 2%;
 }
 #reasons-studio{
   width: 100%;
@@ -466,11 +488,49 @@ header {
   gap: 5%;
 }
 .reason{
-  border-left: 1px solid #A88B4B;
+  position: relative;
   width: 50%;
-  padding: 2%;
+  padding: 1%;
+  padding-top: 5%;
+  padding-left: 4%;
+  font-weight: 300;
+  h4{
+    font-weight: 500;
+    color: #A88B4B;
+  }
 }
-
+.reason::before {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  top: 13px; 
+  height: 90%;  
+  width: 2px;
+  background-color: #A88B4B;
+  border-radius: 1px; 
+}
+#double-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2%;
+}
+.imgs-studio img{
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+  border: 2px solid #A88B4B;
+}
+#img-studio{
+  padding-top: 1%;
+}
+#img-studio img{
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  border: 2px solid #A88B4B;
+}
 /*CONTACT-SECTION*/
 
 
