@@ -1,4 +1,3 @@
-
 /*NAV_BAR*/
 
 #nav-bar {
@@ -56,7 +55,8 @@
     font-size: 20px;
 
     a {
-      color: #A88B4B;
+      color: gray;
+      position: relative;
     }
 
     z-index: 4;
@@ -64,9 +64,54 @@
 }
 
 #nav-bar a:hover {
-  color: #d3d3d3;
+  color: #A88B4B;
 }
 
+#nav-bar a.active {
+  color: #ffffff;
+  text-decoration: dashed;
+  padding-bottom: 5px;
+}
+
+#nav-bar a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, #A88B4B 0%, #c5a059 60%);
+  left: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: right center;
+  transition: transform 320ms, background-color 180ms ease;
+}
+
+#nav-bar a.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+nav.nav-transparent {
+  background: transparent;
+  box-shadow: none;
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+
+nav.nav-transparent #nav-bar a {
+  color: #A88B4B;
+}
+
+/* Estado branco (sobre as seções claras) */
+nav.nav-white {
+  background: #A88B4B;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+  transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+nav.nav-white #nav-bar a {
+  color: #1a1a1a;
+}
 
 
 
@@ -248,6 +293,7 @@ header {
   width: 80%;
   position: relative;
   z-index: 3;
+  border: 1px solid #A88B4B;
 }
 
 .moldura-container {
@@ -289,11 +335,10 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border: 1px solid #A88B4B;
-  display: block;
+    display: block;
   z-index: 3;
   transition: filter 0.4s ease, transform 0.4s ease;
-  
+
   filter: brightness(0.8);
 
 
@@ -301,7 +346,6 @@ header {
 
 .img-tatuadores:hover {
   transform: scale(1.1);
-  border: 1px solid #A88B4B;
 }
 
 .skills {
@@ -411,6 +455,7 @@ header {
 
 #studio {
   width: 80%;
+  padding-top: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,6 +465,7 @@ header {
 
 .column {
   flex: 1;
+  height: 80vh;
 }
 
 #info-studio {
@@ -485,7 +531,7 @@ header {
 
 .imgs-studio img {
   width: 100%;
-  height: 25vh;
+  height: 15vh;
   object-fit: cover;
   filter: brightness(0.7);
   border: 2px solid #A88B4B;
@@ -496,11 +542,46 @@ header {
 }
 
 #img-studio img {
-  height: 30vh;
+  height: 20vh;
   width: 100%;
   object-fit: cover;
   filter: brightness(0.6);
   border: 2px solid #A88B4B;
+}
+
+.mapa-wrapper {
+  border: 1px solid #A88B4B;
+  padding: 10px;
+  margin-top: 5px;
+  height: 42vh;
+}
+
+.mapa-titulo {
+  color: #A88B4B;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+#mapa {
+  width: 100%;
+  height: 35vh;
+}
+
+.mapa-link {
+  display: block;
+  text-align: right;
+  color: #A88B4B;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  transition: opacity 0.3s;
+}
+
+.mapa-link:hover {
+  opacity: 0.6;
 }
 
 /*CONTACT-SECTION*/
@@ -542,12 +623,20 @@ header {
   justify-content: center;
   gap: 2%;
 
-  input {
-    background-color: #3b3b3b;
-    height: 40px;
-    border: 0.5px solid #A88B4B;
-    text-indent: 15px;
-  }
+}
+
+.input-form {
+  background-color: #3b3b3b;
+  height: 40px;
+  border: 0.5px solid #A88B4B;
+  text-indent: 15px;
+}
+#upload{
+  background-color: gray;
+}
+#text-files{
+  font-size: 12px; 
+  color: gray;
 }
 
 #msg {
@@ -656,7 +745,13 @@ header {
 
 #text-footer {
   text-align: center;
-  gap: 2%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+
 }
 
 #social-icons {

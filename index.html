@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aurum Tatoo</title>
-  
-  
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -17,8 +17,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/components.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
@@ -237,10 +239,18 @@
             <div class="imgs-studio"><img src="assets/images/studio2.png" alt=""></div>
           </div>
           <div id="img-studio"><img src="assets/images/studio3.png" alt="imagens do studio"></div>
-        </div>
-        <div id="address-studio"></div>
-      </div>
 
+          <div id="address-studio">
+
+            <div class="mapa-wrapper">
+              <p class="mapa-titulo"> Localização do Estúdio</p>
+              <div id="mapa"></div>
+              <a class="mapa-link"
+                href="https://maps.google.com/?q=Av.+Senador+Levindo+Coelho,+1847,+Vale+do+Jatoba,+Belo+Horizonte+MG"
+                target="_blank">Ver no Google Maps →</a>
+            </div>
+          </div>
+        </div>
     </section>
 
 
@@ -255,18 +265,23 @@
 
         <div id="form-contact">
           <p>Digite seu nome completo:</p>
-          <input type="text" placeholder="Seu nome">
+          <input class="input-form" type="text" placeholder="Seu nome">
           <p>Digite o seu número de telefone:</p>
-          <input type="tel" placeholder="(00) 0 0000-0000">
-
+          <input class="input-form" type="tel" placeholder="(00) 0 0000-0000">
           <p>Local do corpo:</p>
-          <input type="text">
+          <input class="input-form" type="text">
           <p>Tamanho aproximado (em cm):</p>
-          <input type="text">
+          <input class="input-form" type="text">
           <p>Qual a sua ideia da tattoo?</p>
           <textarea name="mensagem" placeholder="Sua Ideia..." id="msg"></textarea>
-          <div id="input">
-            <input id="btn-submit" name="submitContact" type="submit" value="Enviar Mensagem">
+          <p>Anexa sua foto de referência aqui:</p>
+          <input type="file" id="reference" name="referencia" accept="image/png, image/jpeg, image/WEBP">
+          <label for="reference" id="upload"></label>
+          <p id="text-files">
+            Formatos aceitos: JPG, PNG ou WEBP. Tamanho máximo: 5MB. Você pode selecionar mais de uma imagem.
+          </p>
+          <div id="border-btn">
+            <button id="button-form" type="button" onclick="enviarEmail()">Enviar Mensagem</button>
           </div>
         </div>
 
@@ -318,6 +333,7 @@
       <div id="text-footer">
         <p class="gold">Arte rara para peles únicas.</p>
         <p>© 2026 Aurum Tattoo. Todos os direitos reservados.</p>
+        <p>Feito por Lucas Pádua</p>
       </div>
       <div id="social-icons">
         <div class="icons-sm"><svg xmlns="http://www.w3.org/2000/svg"
@@ -339,6 +355,6 @@
     </footer>
   </div>
 </body>
-<script href="assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 
 </html>
