@@ -21,6 +21,7 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <link rel="stylesheet" href="assets/css/components.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
 <body>
@@ -35,6 +36,11 @@
           <li class="nav-item"><a href="#studio-section">Estúdio</a></li>
           <li class="nav-item"><a href="#contact-section">Contato</a></li>
         </ul>
+        <div id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </nav>
     <header id="header">
@@ -49,7 +55,7 @@
     </header>
 
     <section id="artists-section">
-      <div id="artists-text">
+      <div id="artists-text" class="reveal">
         <h1>Nossos artistas</h1>
         <div id="title-artists">Criadores de <em id="artists-title-text">Arte Viva</em></div>
       </div>
@@ -57,7 +63,7 @@
 
       <div id="tatuadores">
 
-        <div class="artists">
+        <div class="artists reveal">
           <div class="moldura-container">
             <div class="borda borda-1"></div>
             <div class="borda borda-2"></div>
@@ -78,7 +84,7 @@
 
         </div>
 
-        <div class="artists">
+        <div class="artists reveal" style="transition-delay: 0.15s;">
           <div class="moldura-container">
             <div class="borda borda-1"></div>
             <div class="borda borda-2"></div>
@@ -106,7 +112,7 @@
 
     <section id="gallery-section">
 
-      <div id="title-gallery">
+      <div id="title-gallery" class="reveal">
         <h3 id="our-job">
           Nossas tattoos
         </h3>
@@ -115,7 +121,7 @@
 
       <div id="gallery-grid">
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0s;">
           <img src="assets/images/tattoos/tattooL3.png" alt="Tatuagem 1">
           <div class="overlay">
             <p class="overlay-title">Lírios no braço</p>
@@ -123,7 +129,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.08s;">
           <img src="assets/images/tattoos/tattooM1.png" alt="Tatuagem 2">
           <div class="overlay">
             <p class="overlay-title">Tigre no peito</p>
@@ -131,7 +137,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.16s;">
           <img src="assets/images/tattoos/tattooL2.png " alt="Tatuagem 3">
           <div class="overlay">
             <p class="overlay-title">Águia no antebraço</p>
@@ -139,7 +145,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.24s;">
           <img src="assets/images/tattoos/tattooM2.png" alt="Tatuagem 4">
           <div class="overlay">
             <p class="overlay-title">Medusa na panturrilha</p>
@@ -147,7 +153,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.32s;">
           <img src="assets/images/tattoos/tattooL4.png" alt="Tatuagem 5">
           <div class="overlay">
             <p class="overlay-title">Flores nas costas</p>
@@ -155,14 +161,14 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.4s;">
           <img src="assets/images/tattoos/tattooM3.png" alt="Tatuagem 6">
           <div class="overlay">
             <p class="overlay-title">Arte de Cristo no antebraço</p>
             <p class="overlay-style">Blackwork · Marcos Antônio</p>
           </div>
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.08s;">
           <img src="assets/images/tattoos/tattooL6.png" alt="Tatuagem 4">
           <div class="overlay">
             <p class="overlay-title">Flores no antebraço</p>
@@ -170,7 +176,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.16s;">
           <img src="assets/images/tattoos/tattooM4.png" alt="Tatuagem 5">
           <div class="overlay">
             <p class="overlay-title">Lobo no Braço</p>
@@ -178,7 +184,7 @@
           </div>
         </div>
 
-        <div class="gallery-item">
+        <div class="gallery-item reveal" style="transition-delay: 0.24s;">
           <img src="assets/images/tattoos/tattooL5.png" alt="Tatuagem 6">
           <div class="overlay">
             <p class="overlay-title">Arte ornamenatal na panturrilha</p>
@@ -192,7 +198,7 @@
 
     <section id="studio-section">
       <div id="studio">
-        <div class="column">
+        <div class="column reveal">
           <div id="info-studio">
             <p class="gold">sobre o estúdio</p>
             <h1 id="title-studio">Filosofia <em class="gold">Aurum</em></h1>
@@ -233,11 +239,13 @@
           </div>
 
         </div>
-        <div class="column">
+        <div class="column reveal" style="transition-delay: 0.2s;">
           <div id="double-img">
-            <div class="imgs-studio"><img src="assets/images/studio1.png" alt=""></div>
+              <div class="imgs-studio"><img src="assets/images/studio1.png" alt=""></div>
             <div class="imgs-studio"><img src="assets/images/studio2.png" alt=""></div>
           </div>
+          
+          
           <div id="img-studio"><img src="assets/images/studio3.png" alt="imagens do studio"></div>
 
           <div id="address-studio">
@@ -251,19 +259,20 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
 
 
     <section id="contact-section">
 
-      <div id="text-contact">
+      <div id="text-contact" class="reveal">
         <h1>Contate-nos</h1>
         <p class="gold">Venha conhecer nossa arte</p>
       </div>
 
       <div id="contact">
 
-        <div id="form-contact">
+        <div id="form-contact" class="reveal">
           <p>Digite seu nome completo:</p>
           <input class="input-form" type="text" placeholder="Seu nome">
           <p>Digite o seu número de telefone:</p>
@@ -285,7 +294,7 @@
           </div>
         </div>
 
-        <div id="ways-of-contact">
+        <div id="ways-of-contact" class="reveal" style="transition-delay: 0.2s;">
           <div id="formas-contato">
             <h4 id="title-contact">Informações de contato</h4>
             <div><a class="info-svg" href="https://www.instagram.com/aurumtattoo_?igsh=OXhhdGhzZHp4NGU5"><svg
@@ -328,7 +337,7 @@
     </section>
 
 
-    <footer id="footer">
+    <footer id="footer" class="reveal">
       <img src="assets/images/logo.png" alt="">
       <div id="text-footer">
         <p class="gold">Arte rara para peles únicas.</p>

@@ -1,36 +1,71 @@
-//EFEITO NAV-BAR
+// SCROLL REVEAL
+const reveals = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(el => revealObserver.observe(el));
 
+
+// EFEITO NAV-BAR (active link)
 window.addEventListener('scroll', () => {
-    // 1. Seleciona todas as tags <section> da página (isso ignora o <header> automaticamente)
     const sections = document.querySelectorAll('section');
-    
-    // 2. Seleciona todos os links da barra de navegação
     const navLinks = document.querySelectorAll('.nav-item a');
-
     let currentSection = '';
 
-    // 3. Verifica qual seção está atualmente visível na tela
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
-        
-        // Subtraímos 100px para compensar a altura do seu nav-bar fixo (que tem 90px)
         if (window.scrollY >= sectionTop - 100) {
             currentSection = section.getAttribute('id');
         }
     });
 
-    // 4. Adiciona a classe ativa apenas no link correspondente à seção atual
     navLinks.forEach(link => {
-        // Primeiro, removemos a classe active de todos os links
         link.classList.remove('active');
-
-        // Se houver uma currentSection (ou seja, se já passou do header) e o href bater com o ID da seção
         if (currentSection && link.getAttribute('href') === `#${currentSection}`) {
             link.classList.add('active');
         }
     });
 });
 
+
+// MENU HAMBURGUER MOBILE
+const hamburger = document.getElementById('hamburger');
+const navTopics = document.getElementById('nav-topics');
+
+if (hamburger && navTopics) {
+  hamburger.addEventListener('click', () => {
+    navTopics.classList.toggle('open');
+    // Anima as barras do hambúrguer
+    const spans = hamburger.querySelectorAll('span');
+    hamburger.classList.toggle('active');
+    if (hamburger.classList.contains('active')) {
+      spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+      spans[1].style.opacity = '0';
+      spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+    } else {
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+    }
+  });
+
+  // Fecha o menu ao clicar em um link
+  navTopics.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navTopics.classList.remove('open');
+      hamburger.classList.remove('active');
+      const spans = hamburger.querySelectorAll('span');
+      spans[0].style.transform = '';
+      spans[1].style.opacity = '';
+      spans[2].style.transform = '';
+    });
+  });
+}
 
 
 // CONFIG MAPA API

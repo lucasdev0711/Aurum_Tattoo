@@ -52,6 +52,8 @@ html {
   color: #A88B4B;
   font-size: 14px;
   text-transform: uppercase;
+    animation: fadeInUp 1.2s 0.8s ease both;
+
 
 }
 
