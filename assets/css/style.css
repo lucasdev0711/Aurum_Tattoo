@@ -1256,3 +1256,1061 @@ header {
     font-size: 22px;
   }
 }
+
+@media (min-width: 2200px) {
+ 
+  /* NAV */
+  #nav {
+    width: 70%;
+    height: 110px;
+  }
+ 
+  #nav img {
+    height: 110px;
+  }
+ 
+  #nav ul {
+    font-size: 26px;
+    width: 28%;
+    gap: 12%;
+  }
+ 
+  #nav-bar {
+    height: 110px;
+  }
+ 
+  /* HEADER */
+  header {
+    margin-top: 110px;
+    height: 92vh;
+  }
+ 
+  #header-overlay {
+    height: 92vh;
+  }
+ 
+  #title-home {
+    font-size: 120px;
+    letter-spacing: 14px;
+  }
+ 
+  #tattoo-subtitle {
+    font-size: 42px;
+  }
+ 
+  #text-title {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+ 
+  .btn {
+    height: 75px;
+    font-size: 18px;
+    width: 20%;
+  }
+ 
+  #header-itens {
+    height: 420px;
+  }
+ 
+  /* ARTISTS */
+  #artists-section {
+    min-height: 120vh;
+  }
+ 
+  #artists-text h1 {
+    font-size: 26px;
+  }
+ 
+  #artists-title-text {
+    font-size: 72px;
+  }
+ 
+  #title-artists {
+    font-size: 72px;
+  }
+ 
+  #tatuadores {
+    grid-template-columns: 28% 28%;
+    gap: 6%;
+    height: 85vh;
+  }
+ 
+  #tatuadores h2 {
+    font-size: 34px;
+  }
+ 
+  #tatuadores p {
+    font-size: 22px;
+  }
+ 
+  .box-img {
+    height: 55vh;
+  }
+ 
+  .borda {
+    height: 55vh;
+  }
+ 
+  .especialidade {
+    width: 160px;
+    height: 38px;
+    font-size: 13px;
+  }
+ 
+  /* GALLERY */
+  #gallery-section {
+    height: 160vh;
+  }
+ 
+  #our-job {
+    font-size: 26px;
+  }
+ 
+  #gallery-title {
+    font-size: 56px;
+  }
+ 
+  #title-gallery h1 {
+    font-size: 56px;
+  }
+ 
+  #gallery-grid {
+    width: 75%;
+    gap: 1.2%;
+  }
+ 
+  .gallery-item img {
+    height: 40vh;
+  }
+ 
+  .overlay-title {
+    font-size: 20px;
+  }
+ 
+  .overlay-style {
+    font-size: 16px;
+  }
+ 
+  /* STUDIO */
+  #studio-section {
+    height: 105vh;
+  }
+ 
+  #studio {
+    width: 75%;
+  }
+ 
+  #title-studio {
+    font-size: 54px;
+  }
+ 
+  #title-studio em {
+    font-size: 54px;
+  }
+ 
+  #text-studio {
+    font-size: 20px;
+  }
+ 
+  .reason h4 {
+    font-size: 18px;
+  }
+ 
+  .reason p {
+    font-size: 16px;
+  }
+ 
+  .imgs-studio img {
+    height: 18vh;
+  }
+ 
+  #img-studio img {
+    height: 24vh;
+  }
+ 
+  #mapa {
+    height: 38vh;
+  }
+ 
+  .mapa-wrapper {
+    height: 46vh;
+  }
+ 
+  /* CONTACT */
+  #contact-section {
+    height: 110vh;
+  }
+ 
+  #text-contact h1 {
+    font-size: 54px;
+  }
+ 
+  #contact {
+    width: 65%;
+  }
+ 
+  #form-contact {
+    width: 600px;
+  }
+ 
+  .input-form {
+    height: 50px;
+    font-size: 16px;
+  }
+ 
+  #msg {
+    height: 130px;
+    font-size: 16px;
+  }
+ 
+  #button-form {
+    height: 85px;
+    font-size: 18px;
+  }
+ 
+  #formas-contato {
+    width: 65%;
+    gap: 22px 0;
+  }
+ 
+  #title-contact {
+    font-size: 22px;
+  }
+ 
+  .info-svg svg {
+    width: 38px;
+  }
+ 
+  #ways-of-contact p {
+    font-size: 18px;
+  }
+ 
+  /* FOOTER */
+  #footer img {
+    height: 110px;
+  }
+ 
+  #footer {
+    height: 18vh;
+  }
+ 
+  #social-icons svg {
+    width: 50px;
+  }
+ 
+  .icons-sm {
+    height: 58px;
+    width: 58px;
+  }
+}
+ 
+ 
+/* ============================================================
+   1536 x 864 — Notebook grande / Full HD menor
+   ============================================================ */
+@media (min-width: 1440px) and (max-width: 1600px) {
+ 
+  /* NAV */
+  #nav {
+    width: 82%;
+    height: 95px;
+  }
+ 
+  #nav img {
+    height: 95px;
+  }
+ 
+  #nav ul {
+    font-size: 18px;
+    width: 32%;
+  }
+ 
+  #nav-bar {
+    height: 95px;
+  }
+ 
+  /* HEADER */
+  header {
+    margin-top: 95px;
+    height: 93vh;
+  }
+ 
+  #header-overlay {
+    height: 93vh;
+  }
+ 
+  #title-home {
+    font-size: 90px;
+    letter-spacing: 10px;
+  }
+ 
+  #tattoo-subtitle {
+    font-size: 32px;
+  }
+ 
+  #text-title {
+    font-size: 21px;
+  }
+ 
+  .btn {
+    height: 65px;
+    font-size: 15px;
+    width: 22%;
+  }
+ 
+  #header-itens {
+    height: 330px;
+  }
+ 
+  /* ARTISTS */
+  #artists-section {
+    min-height: 125vh;
+  }
+ 
+  #artists-text h1 {
+    font-size: 20px;
+  }
+ 
+  #artists-title-text {
+    font-size: 54px;
+  }
+ 
+  #title-artists {
+    font-size: 54px;
+  }
+ 
+  #tatuadores {
+    grid-template-columns: 32% 32%;
+    height: 82vh;
+  }
+ 
+  #tatuadores h2 {
+    font-size: 27px;
+  }
+ 
+  #tatuadores p {
+    font-size: 18px;
+  }
+ 
+  .box-img {
+    height: 52vh;
+  }
+ 
+  .borda {
+    height: 52vh;
+  }
+ 
+  /* GALLERY */
+  #gallery-section {
+    height: 165vh;
+  }
+ 
+  #gallery-title h1 {
+    font-size: 44px;
+  }
+ 
+  #gallery-grid {
+    width: 82%;
+  }
+ 
+  .gallery-item img {
+    height: 42vh;
+  }
+ 
+  /* STUDIO */
+  #studio-section {
+    height: 100vh;
+  }
+ 
+  #studio {
+    width: 82%;
+  }
+ 
+  #title-studio {
+    font-size: 40px;
+  }
+ 
+  #title-studio em {
+    font-size: 40px;
+  }
+ 
+  #text-studio {
+    font-size: 16px;
+  }
+ 
+  .imgs-studio img {
+    height: 16vh;
+  }
+ 
+  #img-studio img {
+    height: 22vh;
+  }
+ 
+  /* CONTACT */
+  #contact-section {
+    height: 105vh;
+  }
+ 
+  #contact {
+    width: 72%;
+  }
+ 
+  #form-contact {
+    width: 480px;
+  }
+ 
+  /* FOOTER */
+  #footer {
+    height: 14vh;
+  }
+}
+ 
+ 
+/* ============================================================
+   1366 x 768 — Notebook médio / HD clássico
+   ============================================================ */
+@media (min-width: 1280px) and (max-width: 1439px) {
+ 
+  /* NAV */
+  #nav {
+    width: 85%;
+    height: 85px;
+  }
+ 
+  #nav img {
+    height: 85px;
+  }
+ 
+  #nav ul {
+    font-size: 16px;
+    width: 35%;
+    gap: 12%;
+  }
+ 
+  #nav-bar {
+    height: 85px;
+  }
+ 
+  /* HEADER */
+  header {
+    margin-top: 85px;
+    height: 94vh;
+  }
+ 
+  #header-overlay {
+    height: 94vh;
+  }
+ 
+  #title-home {
+    font-size: 75px;
+    letter-spacing: 9px;
+  }
+ 
+  #tattoo-subtitle {
+    font-size: 26px;
+  }
+ 
+  #text-title {
+    font-size: 18px;
+  }
+ 
+  .btn {
+    height: 58px;
+    font-size: 13px;
+    width: 22%;
+  }
+ 
+  #header-itens {
+    height: 290px;
+  }
+ 
+  /* ARTISTS */
+  #artists-section {
+    min-height: 130vh;
+  }
+ 
+  #artists-text h1 {
+    font-size: 18px;
+  }
+ 
+  #artists-title-text {
+    font-size: 46px;
+  }
+ 
+  #title-artists {
+    font-size: 46px;
+  }
+ 
+  #tatuadores {
+    grid-template-columns: 32% 32%;
+    height: 85vh;
+  }
+ 
+  #tatuadores h2 {
+    font-size: 23px;
+  }
+ 
+  #tatuadores p {
+    font-size: 16px;
+  }
+ 
+  .box-img {
+    height: 50vh;
+  }
+ 
+  .borda {
+    height: 50vh;
+  }
+ 
+  .especialidade {
+    width: 120px;
+    font-size: 11px;
+  }
+ 
+  /* GALLERY */
+  #gallery-section {
+    height: 175vh;
+  }
+ 
+  #our-job {
+    font-size: 17px;
+  }
+ 
+  #gallery-title {
+    font-size: 36px;
+  }
+ 
+  #title-gallery h1 {
+    font-size: 36px;
+  }
+ 
+  #gallery-grid {
+    width: 85%;
+  }
+ 
+  .gallery-item img {
+    height: 40vh;
+  }
+ 
+  /* STUDIO */
+  #studio-section {
+    height: 100vh;
+  }
+ 
+  #studio {
+    width: 85%;
+  }
+ 
+  #info-studio {
+    width: 85%;
+  }
+ 
+  #title-studio {
+    font-size: 34px;
+  }
+ 
+  #title-studio em {
+    font-size: 34px;
+  }
+ 
+  #text-studio {
+    font-size: 15px;
+  }
+ 
+  .reason h4 {
+    font-size: 15px;
+  }
+ 
+  .reason p {
+    font-size: 13px;
+  }
+ 
+  .imgs-studio img {
+    height: 14vh;
+  }
+ 
+  #img-studio img {
+    height: 20vh;
+  }
+ 
+  #mapa {
+    height: 30vh;
+  }
+ 
+  .mapa-wrapper {
+    height: 38vh;
+  }
+ 
+  /* CONTACT */
+  #contact-section {
+    height: 105vh;
+  }
+ 
+  #text-contact h1 {
+    font-size: 36px;
+  }
+ 
+  #text-contact {
+    height: 12vh;
+  }
+ 
+  #contact {
+    width: 75%;
+  }
+ 
+  #form-contact {
+    width: 440px;
+    height: 58vh;
+  }
+ 
+  #formas-contato {
+    width: 75%;
+  }
+ 
+  #ways-of-contact {
+    height: 55vh;
+  }
+ 
+  /* FOOTER */
+  #footer {
+    height: 13vh;
+  }
+ 
+  #footer img {
+    height: 75px;
+  }
+ 
+  #social-icons svg {
+    width: 34px;
+  }
+ 
+  .icons-sm {
+    height: 40px;
+    width: 40px;
+  }
+}
+ 
+ 
+/* ============================================================
+   TABLETS — 768 x 1024  &  834 x 1194
+   (portrait, entre 768px e 1024px de largura)
+   ============================================================ */
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+  /* NAV */
+  #nav-bar {
+    height: 75px;
+  }
+ 
+  #nav {
+    width: 90%;
+    height: 75px;
+  }
+ 
+  #nav img {
+    height: 70px;
+  }
+ 
+  #nav ul {
+    font-size: 15px;
+    width: 58%;
+    gap: 8%;
+  }
+ 
+  /* HEADER */
+  header {
+    margin-top: 75px;
+    height: 88vh;
+  }
+ 
+  #header-overlay {
+    height: 88vh;
+  }
+ 
+  #title-home {
+    font-size: 60px;
+    letter-spacing: 8px;
+  }
+ 
+  #tattoo-subtitle {
+    font-size: 22px;
+  }
+ 
+  #text-title {
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding: 0 30px;
+    text-align: center;
+  }
+ 
+  .btn {
+    width: 38%;
+    height: 55px;
+    font-size: 13px;
+  }
+ 
+  #header-itens {
+    height: 260px;
+    gap: 14px;
+  }
+ 
+  /* ARTISTS */
+  #artists-section {
+    min-height: auto;
+    padding-bottom: 50px;
+  }
+ 
+  #artists-text {
+    height: auto;
+    padding: 50px 30px 25px;
+    gap: 12px;
+    grid-template-rows: auto;
+  }
+ 
+  #artists-text h1 {
+    font-size: 18px;
+  }
+ 
+  #title-artists {
+    font-size: 36px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+ 
+  #artists-title-text {
+    font-size: 36px;
+  }
+ 
+  #tatuadores {
+    /* Mantém 2 colunas lado a lado no tablet */
+    display: grid;
+    grid-template-columns: 44% 44%;
+    justify-content: center;
+    height: auto;
+    gap: 4%;
+    padding: 0 20px 40px;
+  }
+ 
+  #tatuadores h2 {
+    font-size: 20px;
+  }
+ 
+  #tatuadores p {
+    font-size: 15px;
+  }
+ 
+  .artists {
+    width: 100%;
+    gap: 10px;
+  }
+ 
+  .box-img {
+    height: 40vw;
+    width: 90%;
+  }
+ 
+  .borda {
+    height: 40vw;
+    width: 78%;
+  }
+ 
+  .borda-1 {
+    left: 52%;
+    top: 22px;
+  }
+ 
+  .borda-2 {
+    left: 51.5%;
+    top: 19px;
+  }
+ 
+  .especialidade {
+    width: 110px;
+    height: 28px;
+    font-size: 11px;
+  }
+ 
+  /* GALLERY */
+  #gallery-section {
+    height: auto;
+    padding: 50px 0 60px;
+  }
+ 
+  #title-gallery {
+    padding: 20px 30px 10px;
+  }
+ 
+  #title-gallery h1 {
+    font-size: 32px;
+  }
+ 
+  #our-job {
+    font-size: 15px;
+  }
+ 
+  #gallery-title {
+    font-size: 32px;
+  }
+ 
+  #gallery-grid {
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5%;
+    padding: 20px 15px;
+  }
+ 
+  .gallery-item img {
+    height: 26vw;
+  }
+ 
+  .overlay {
+    padding: 10px;
+  }
+ 
+  .overlay-title {
+    font-size: 13px;
+  }
+ 
+  .overlay-style {
+    font-size: 10px;
+  }
+ 
+  /* STUDIO */
+  #studio-section {
+    height: auto;
+    padding: 50px 0;
+  }
+ 
+  #studio {
+    width: 88%;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 0;
+    align-items: stretch;
+  }
+ 
+  .column {
+    height: auto;
+    width: 100%;
+    flex: unset;
+  }
+ 
+  #info-studio {
+    height: auto;
+    width: 100%;
+  }
+ 
+  #title-studio {
+    font-size: 30px;
+  }
+ 
+  #title-studio em {
+    font-size: 30px;
+  }
+ 
+  #text-studio {
+    font-size: 15px;
+    padding: 15px 0;
+  }
+ 
+  #reasons-studio {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 18px;
+  }
+ 
+  .reason {
+    width: 100%;
+    padding: 0 0 0 14px;
+    padding-top: 10px;
+  }
+ 
+  .reason h4 {
+    font-size: 15px;
+  }
+ 
+  .reason p {
+    font-size: 13px;
+  }
+ 
+  #double-img {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+ 
+  .imgs-studio img {
+    height: 20vw;
+  }
+ 
+  #img-studio img {
+    height: 32vw;
+    margin-top: 10px;
+  }
+ 
+  .mapa-wrapper {
+    height: auto;
+    margin-top: 18px;
+  }
+ 
+  #mapa {
+    height: 38vw;
+  }
+ 
+  /* CONTACT */
+  #contact-section {
+    height: auto;
+    padding: 50px 0 60px;
+  }
+ 
+  #text-contact {
+    height: auto;
+    padding: 15px 30px 25px;
+  }
+ 
+  #text-contact h1 {
+    font-size: 32px;
+  }
+ 
+  #contact {
+    width: 88%;
+    flex-direction: column;
+    gap: 45px;
+    align-items: stretch;
+  }
+ 
+  #form-contact {
+    width: 100%;
+    height: auto;
+    gap: 12px;
+  }
+ 
+  .input-form {
+    width: 100%;
+    height: 44px;
+  }
+ 
+  #msg {
+    width: 100%;
+    height: 110px;
+  }
+ 
+  #button-form {
+    height: 72px;
+  }
+ 
+  #ways-of-contact {
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding-left: 5px;
+  }
+ 
+  #formas-contato {
+    width: 60%;
+    grid-template-columns: 18% 82%;
+    gap: 14px 0;
+  }
+ 
+  #title-contact {
+    font-size: 16px;
+  }
+ 
+  .info-svg {
+    width: 44px;
+    height: 38px;
+  }
+ 
+  .info-svg svg {
+    width: 26px;
+  }
+ 
+  #text-disponivel {
+    width: 90%;
+    height: auto;
+    padding: 18px;
+    margin-top: 22px;
+    top: 0;
+  }
+ 
+  #text-disponivel p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+ 
+  /* FOOTER */
+  #footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    height: auto;
+    padding: 28px 20px;
+  }
+ 
+  #footer img {
+    height: 70px;
+  }
+ 
+  #text-footer {
+    height: auto;
+    gap: 8px;
+    text-align: center;
+  }
+ 
+  #social-icons {
+    column-gap: 10px;
+  }
+ 
+  #social-icons svg {
+    width: 32px;
+  }
+ 
+  .icons-sm {
+    height: 40px;
+    width: 40px;
+  }
+}
+ 
+ 
+/* ============================================================
+   834 x 1194 — iPad Pro 11" portrait
+   Sobrescreve ajustes finos acima para esta resolução específica
+   ============================================================ */
+@media (min-width: 820px) and (max-width: 860px) {
+ 
+  /* Galeria em 3 colunas fica espaçosa — mantém */
+  #gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 88%;
+  }
+ 
+  .gallery-item img {
+    height: 25vw;
+  }
+ 
+  /* Artistas com imagens um pouco maiores */
+  .box-img {
+    height: 38vw;
+  }
+ 
+  .borda {
+    height: 38vw;
+  }
+ 
+  /* Formulário de contato com largura adequada */
+  #form-contact {
+    width: 100%;
+  }
+ 
+  #formas-contato {
+    width: 55%;
+  }
+ 
+  /* Mapa com altura proporcional */
+  #mapa {
+    height: 36vw;
+  }
+}
