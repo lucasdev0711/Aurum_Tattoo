@@ -95,3 +95,39 @@ document.addEventListener('DOMContentLoaded', function () {
     .bindPopup('<b style="color: #A88B4B">AURUM Tattoo</b><p style="color: #000000">Av. Senador Levindo Coelho, 1847</p>')
     .openPopup();
 });
+
+
+
+// ENVIO FORMULARIO
+
+function enviarWhatsApp() {
+  // 1. Pegamos os valores
+  const nome = document.getElementById('nome').value;
+  const telefone = document.getElementById('telefone').value;
+  const local = document.getElementById('local').value;
+  const tamanho = document.getElementById('tamanho').value;
+  const ideia = document.getElementById('msg').value;
+
+  if (!nome || !ideia) {
+    alert("Por favor, preencha pelo menos o seu nome e a ideia da tattoo!");
+    return; 
+  }
+
+  // 2. Montamos a mensagem dando "Enter" normalmente dentro das crases (`)
+  const mensagem = `Novo pedido de orçamento pelo site:
+  
+*Nome:* ${nome}
+*Telefone:* ${telefone}
+*Local da tattoo:* ${local}
+*Tamanho:* ${tamanho}
+*Ideia:* ${ideia}
+
+(Enviarei as referências logo abaixo)`;
+
+  // 3. O número do WhatsApp (Lembre-se: 55 + DDD + Número)
+  const numeroEstudio = "553199780551"; 
+
+  // 4. Cria o link e redireciona
+  const url = `https://wa.me/${numeroEstudio}?text=${encodeURIComponent(mensagem)}`;
+  window.open(url, '_blank');
+}
