@@ -125,7 +125,7 @@ function enviarWhatsApp() {
 (Enviarei as referências logo abaixo)`;
 
   // 3. O número do WhatsApp (Lembre-se: 55 + DDD + Número)
-  const numeroEstudio = "553199780551"; 
+  const numeroEstudio = "5531997800551"; 
 
   // 4. Cria o link e redireciona
   const url = `https://wa.me/${numeroEstudio}?text=${encodeURIComponent(mensagem)}`;
