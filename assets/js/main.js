@@ -70,7 +70,8 @@ if (hamburger && navTopics) {
 
 // CONFIG MAPA API
 document.addEventListener('DOMContentLoaded', function () {
-  const mapa = L.map('mapa', { zoomControl: false }).setView([-20.00351483929989, -44.035115358818054], 16);
+  // Atualizado com as coordenadas da Savassi, BH
+  const mapa = L.map('mapa', { zoomControl: false }).setView([-19.938100, -43.933300], 16);
 
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution: '© OpenStreetMap © CARTO'
@@ -90,9 +91,10 @@ document.addEventListener('DOMContentLoaded', function () {
     className: ''
   });
 
-  L.marker([-20.00351483929989, -44.035115358818054], { icon: icone })
+  // Marcador atualizado com as novas coordenadas e endereço
+  L.marker([-19.938100, -43.933300], { icon: icone })
     .addTo(mapa)
-    .bindPopup('<b style="color: #A88B4B">AURUM Tattoo</b><p style="color: #000000">Av. Senador Levindo Coelho, 1847</p>')
+    .bindPopup('<b style="color: #A88B4B">TattooHub</b><p style="color: #000000">Rua das Artes, 404 - Savassi</p>')
     .openPopup();
 });
 
